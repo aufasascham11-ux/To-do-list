@@ -1,0 +1,78 @@
+body {
+    font-family: 'Inter', sans-serif; /* Font dari desain Figma */
+    background-color: #c3c3c3; /* Latar belakang abu-abu */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600; /* Font weight dari desain */
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+input{
+    border-radius: 100px;
+    width: 10rem;
+    height: 2rem;
+}
+#add-btn{
+    background-color: #2600ff;
+    color: #ffffff;
+    border-radius: 25px;
+    height: 2rem;
+    font-size: 15px;
+    width: 5rem;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 16px;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
